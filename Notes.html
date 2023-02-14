@@ -6,34 +6,73 @@
 
         <title >Notes/Writeups</title>
         <link rel="icon" type="image/x-icon" href="./images/favicon.ico" />
+        <link rel="stylesheet" href="styles/style2.css" media="screen" text="text/css" />
     </head>
+    
 
     <body>
-        <h1 style="border-width:2px; border-style:solid">Writeups</h1>
-        <nav>
-            <ul>
-                <li><a href="./index.html">About Me</a></li>
-                <li><a href="https://github.com/Seneca78922" target="_blank">Github</a></li>
-                <li><a href="./Resume.html">Resume</a></li>
-                <li><a href="./Projects.html">Projects</a></li>
-                <li><a href="./Notes.html">Notes/Writeups</a></li>
-                <li><a href="./Experiments.html">Experiments for 134B</a></li>
+        
+        <header>
+            <!---
+                <picture class="images">
+                    <source srcset="./images/flat,750x1000,075,f (1).jpg" media="(min-width:800px)"  aria-label="Blue banner picture"/>
+                    <source srcset="./images/nature-banner-background-6.jpg"  media="(min-width: 650px)" waria-label="green nature banner" />
+                    <img src="./images/sloth" alt="sloth picture didn't load" aria-label="sloth picture"/>
+                </picture> -->
+               
+    
+                <!-- <nav class = "container" >
+                    <a href="#">About Me</a></li>
+                    <a href="https://github.com/Seneca78922" target="_blank">Github</a></li>
+                    <a href="./Resume.html">Resume</a></li>
+                    <a href="./Projects.html">Projects</a></li>
+                    <a href="./Notes.html">Notes/Writeups</a></li>
+                    <a href="./Experiments.html">Experiments for 134B</a></li>
+                </nav> -->
                 
-            </ul>
-        </nav>
+                <nav id="menu-container">
+                    <label for="hamburger-icon">&#9776;</label>
+                    <input type="checkbox" id="hamburger-icon"/>
+                  
+                    <a href="./index.html">About Me</a>
+                    <a href="https://github.com/Seneca78922" target="_blank">Github</a>
+                    <a href="./Resume.html">Resume</a>
+                    <a href="./Projects.html">Projects</a>
+                    <a href="./Notes.html">Notes/Writeups</a>
+                    <a href="./Experiments.html">Experiments for 134B</a>
+                  
+                </nav>
+                
+                
+                
+            </header>
+            
+
+            <main>
+                
+                <h1 style="font-size:1.2rem;">Writeups
+                <section  style="padding-top:50px;">
+                    <label for="topic" style="color:white;">Filter By Topic</label>
+                    <select id="topic">
+                        <optgroup label="Topics">
+                            <option>PentesterLabs</option>
+                            <option>CTF</option>
+                            <option>HTB</option>
+                            <option>Programming</option>
+                        </optgroup>
+                    </select>
+                  </section>
+          </h1>
+          
+          
+                  
+          
+              </main>
         
 
     </body>
 
-    <label for="topic">Filter by Topic</label>
-    <select id="topic">
-        <optgroup lable="Writeups">
-            <option>PentesterLabs</option>
-            <option>CTF</option>
-            <option>HTB</option>
-            <option>Programming</option>
-        </optgroup>
-    </select>
+    
 
 
 </html>

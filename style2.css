@@ -24,10 +24,8 @@
   
   body {
     display: grid;
-    /* grid-template: auto 1fr auto / auto 1fr auto; */
-    /*grid-template: auto 1fr auto / auto 1fr auto;*/
+    background-color:black;
     grid-template-rows: 10% 85% 5%;
-    /*grid-template-rows: 10% 75% 10% 5%;*/
     grid-template-columns: repeat(4,1fr);
     height: 100vh;
     margin:0;
@@ -49,12 +47,7 @@
     color: var(--color-text);
     text-align: center;
   }
-   /* nav #menu-container{
    
-    display: flex;
-    background-color: var(--color-header);
-    justify-content: space-evenly;
-  }  */
 
    nav:first-child {
     visibility: visible;
@@ -92,7 +85,6 @@
  }
   
    main {
-    /* grid-column: 2 / 3; */
     
     grid-column:1/5;
     grid-row:2/4;
@@ -100,7 +92,7 @@
     
   } 
   #main_content{
-    grid-column:4;
+    grid-column:2/4;
     grid-row:1/3;
     text-align:center;
     background-color:var(--color-about-me);
@@ -116,30 +108,36 @@
     text-align:center;
     background-color:black;
     color:white;
+   
   }
-  /* footer {
-    grid-column: 1 / 5; 
-    grid-row:4/4; 
-    background-color: var(--color-footer);
-    color: var(--color-text);
-    text-align: center;
-    padding: 2rem;
-  } */
+  #contacts a{
+    text-decoration-line:none;
+    border:1px white solid;
+    border-radius:10px;
+    color:white;
+    background:blue;
+    
+    transition: transform 0.2s;
+  }
+  
+ 
   
   
   
   @media screen and (max-width: 750px) {
    
     body {
-        display: flex;
-        /* grid-template: auto 1fr auto / auto 1fr auto; */
-        /*grid-template: auto 1fr auto / auto 1fr auto;*/
+         display: flex;
+        flex-direction:column; 
+        
+      
         height: 100vh;
+        width:100vw;
         margin:0;
-      }
+      } 
     header {
         display:flex;
-        background-color:blue;
+        background-color:black;
     }
     nav {
         display: flex;
@@ -150,7 +148,7 @@
         box-sizing: border-box;
         display:block;
         width: 100vw;
-        border-top: solid 1px black;
+        border-top: solid 2px white;
 
       }
       #menu-container label {
@@ -161,37 +159,53 @@
         font-size:1.2em;
         
       }
-      #hamburger-icon { display: inline-block}
+      
       #menu-container a  {display: none;}
      
-      #menu-container input:checked ~ #menu-container a {display:block;}
+      #menu-container input:checked ~ a {display:block;}
+      
+      
     #pfp{
         width:100px;
         height:100px;
+        
+    }
+    #profile_pic h1 {
+        text-align:left;
     }
     #profile_pic{
-        grid-column:1/1;
-        grid-row:1/1;
+        
         background-color:purple;
         padding-left:20px;
         padding-right:20px;
      }
-     body {
-        display:flex;
-        flex-direction:column;  
+     #contacts {
+        grid-column:2/4;
+        grid-row:1/1;
+       
+        text-align:center;
+        background-color:black;
+        color:white;
       }
+     
+     
 
       #main_content{
-        flex-wrap: wrap;
+       
+        grid-column:1/4;
+        grid-row:2;
+        padding-top:50px;
+        height:100vh;
+        
         text-align:center;
         background-color:var(--color-about-me);
         color:var(--color-text);
+        
+
     
       }
       
 
-      /*followed tutorial from https://code-boxx.com/simple-responsive-pure-css-hamburger-menu/*/
-      
      
       
      

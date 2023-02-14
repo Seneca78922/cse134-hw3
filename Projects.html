@@ -6,28 +6,32 @@
 
         <title>Projects</title>
         <link rel="icon" type="image/x-icon" href="./images/favicon.ico" />
+        <link rel="stylesheet" href="styles/style2.css" media="screen" text="text/css" />
     </head>
 
     <body>
-        <nav>
-            <ul>
-                <li><a href="./index.html">About Me</a></li>
-                <li><a href="https://github.com/Seneca78922" target="_blank">Github</a></li>
-                <li><a href="./Resume.html">Resume</a></li>
-                <li><a href="./Projects.html">Projects</a></li>
-                <li><a href="./Notes.html">Notes/Writeups</a></li>
-                <li><a href="./Experiments.html">Experiments for 134B</a></li>
-                
-            </ul>
-        </nav>
+           
         <header>
-            <h2>My Projects</h2>
+            <nav id="menu-container">
+                <label for="hamburger-icon">&#9776;</label>
+                <input type="checkbox" id="hamburger-icon"/>
+              
+                <a href="./index.html">About Me</a>
+                <a href="https://github.com/Seneca78922" target="_blank">Github</a>
+                <a href="./Resume.html">Resume</a>
+                <a href="./Projects.html">Projects</a>
+                <a href="./Notes.html">Notes/Writeups</a>
+                <a href="./Experiments.html">Experiments for 134B</a>
+              
+            </nav>
+            
         </header>
+    <main>
+        <h1>My Projects</h1>
       <div class="project_description">
         <span class ="project title"><b>Project title that is styled with CSS</b></span>
-        <p style="border-width:2px; border-style:solid; border-color:black">Filler Description of project. This should be 
-            styled with CSS later and look like a box that 
-            redirets to project when clicked.
+        <p style="color: white;border-width:2px; border-style:solid; border-color:white;padding:20px; width:fit-content;">Filler Description of project. Should redirect
+            to a project page when clicked. 
         </p>
       </div>
 
@@ -37,7 +41,7 @@
       title="Another Project format preview/display format"
       width="500"
       height="200"></iframe>
-    
+    </main>
     </body>
 
 

@@ -7,9 +7,43 @@
         <title>Lab Experiments</title>
         <link rel="icon" type="image/x-icon" href="./images/favicon.ico" />
         <script src="placeholder.js"></script>
-    </head>
+        <style>
+            :root {
+                --border: 2px solid white;
+                background-color:white;
+                animation-name: animation;
+                animation-duration: 2s;
+            }
+            p{
+                border: var(--border);
+            }
+            @keyframes animation {
+              from {background-color: white;
+                    color: black;
+              }
+              to {background-color: black;
+                  color:white;
+                 
+                    
+                } 
+                
+            }
+            
+            #canvas:hover{
+                transform: translatex(100px);
+                transform: translatey(100px);
+                
+            }
+            
+            
+
+         </style>
+
+      </head>
 
     <body>
+        
+        
         <p style="border-width:2px; border-style:solid">square made with &ltcanvas&gt</p>
         <canvas width="150" height="150" id="canvas">
             Just a black box;couldn't be rendered
