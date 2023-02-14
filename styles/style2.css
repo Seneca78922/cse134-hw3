@@ -1,11 +1,6 @@
 :root {
     --color-header: black;
-    /* --color-left-sidebar: hsl(225, 70%, 72%);
-    --color-right-sidebar: hsl(225, 70%, 72%); */
-    --color-about-me:black;
-    --color-main: hsl(202, 14%, 85%);
-    --color-main: rgb(118, 55, 55);
-    --color-footer: black;
+    --color-about-me:black;    
     --color-text: hsl(0, 0%, 100%);
     --font: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   }
@@ -118,12 +113,8 @@
     background:blue;
     
     transition: transform 0.2s;
-  }
-  
- 
-  
-  
-  
+  }  
+
   @media screen and (max-width: 750px) {
    
     body {
@@ -187,8 +178,6 @@
         background-color:black;
         color:white;
       }
-     
-     
 
       #main_content{
        
@@ -200,9 +189,6 @@
         text-align:center;
         background-color:var(--color-about-me);
         color:var(--color-text);
-        
-
-    
       }
       
 
