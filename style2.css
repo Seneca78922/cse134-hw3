@@ -40,7 +40,8 @@
     text-align:center;
     color:white;
   }
-  header {
+   
+   header {
     padding: 1rem;
     grid-column:1/5;
     grid-row:1/1;
@@ -48,24 +49,34 @@
     color: var(--color-text);
     text-align: center;
   }
-  
-  nav:first-child {
+   /* nav #menu-container{
+   
+    display: flex;
+    background-color: var(--color-header);
+    justify-content: space-evenly;
+  }  */
+
+   nav:first-child {
     visibility: visible;
   }
   
   nav > * + * {
     visibility: visible;
-  }
+  } 
   
   nav {
     display: flex;
+    flex-direction:row;
     justify-content: space-evenly;
   }
   
-  a {
+  nav a {
+    display:flex;
+   
     text-decoration: none;
     color: var(--color-text);
     transition: transform 0.2s;
+  
   }
   
   a:hover {
@@ -96,7 +107,7 @@
     color:var(--color-text);
 
   }
-  
+   #menu-container label, #hamburger-icon {display:none;}
   
   #contacts {
     grid-column:1/2;
@@ -117,23 +128,74 @@
   
   
   
-  @media screen and (max-width: 640px) {
-    nav:first-child {
-      visibility: visible;
+  @media screen and (max-width: 750px) {
+   
+    body {
+        display: flex;
+        /* grid-template: auto 1fr auto / auto 1fr auto; */
+        /*grid-template: auto 1fr auto / auto 1fr auto;*/
+        height: 100vh;
+        margin:0;
+      }
+    header {
+        display:flex;
+        background-color:blue;
     }
-    nav > * + * {
-      visibility: hidden;
+    nav {
+        display: flex;
+        flex-direction:column;
+        justify-content: space-evenly;
+      }
+    nav a {
+        box-sizing: border-box;
+        display:block;
+        width: 100vw;
+        border-top: solid 1px black;
+
+      }
+      #menu-container label {
+        color:white;
+        
+        display:inline-block;
+        font-style:normal;
+        font-size:1.2em;
+        
+      }
+      #hamburger-icon { display: inline-block}
+      #menu-container a  {display: none;}
+     
+      #menu-container input:checked ~ #menu-container a {display:block;}
+    #pfp{
+        width:100px;
+        height:100px;
     }
-  
-    /* #left-side {
-      grid-column: 1 / 4;
-      max-height: 120px;
-    } */
-  
+    #profile_pic{
+        grid-column:1/1;
+        grid-row:1/1;
+        background-color:purple;
+        padding-left:20px;
+        padding-right:20px;
+     }
+     body {
+        display:flex;
+        flex-direction:column;  
+      }
+
+      #main_content{
+        flex-wrap: wrap;
+        text-align:center;
+        background-color:var(--color-about-me);
+        color:var(--color-text);
     
-  
-    /* #right-side {
-      grid-column: 1 / 4;
-      min-height: 120px;
-    } */
+      }
+      
+
+      /*followed tutorial from https://code-boxx.com/simple-responsive-pure-css-hamburger-menu/*/
+      
+     
+      
+     
+      
+
+    
   }
